@@ -1,8 +1,6 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import "./global.css";
+import React, { useState } from "react";
 
-function App() {
+export default function Header() {
   const [count, setCount] = useState(0);
 
   return (
@@ -10,8 +8,9 @@ function App() {
       <button onClick={() => setCount((count) => count + 1)}>
         count is {count}
       </button>
+      <p>
+        Edit <code>src/App.tsx</code> and save to test HMR
+      </p>
     </div>
   );
 }
-
-export default App;
