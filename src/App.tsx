@@ -1,16 +1,25 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
 import "./global.css";
+
+import Header from "./components/Header";
+import Banner from "./components/Banner";
+import Hero from "./components/Hero";
+import Feature from "./components/Feature";
+import Footer from "./components/Footer";
+import LogoSlider from "./components/LogoSlider";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <div className="card">
-      <button onClick={() => setCount((count) => count + 1)}>
-        count is {count}
-      </button>
-    </div>
+    <>
+      <Header />
+      <Banner />
+      <Hero />
+      <LogoSlider />
+      <Feature />
+      <Footer />
+    </>
   );
 }
 
